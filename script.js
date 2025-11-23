@@ -6,8 +6,8 @@ var gamePattern = []; // Array to store the game pattern
 var userClickedPattern = [];
 
 // Function to start the game
-$(document).on("click", function () {
-    if (!started) {
+$(document).on("click", function (event) {
+    if (!started && !$(event.target).hasClass("btn")) {
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
