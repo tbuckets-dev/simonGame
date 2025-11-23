@@ -6,7 +6,7 @@ var gamePattern = []; // Array to store the game pattern
 var userClickedPattern = [];
 
 // Function to start the game
-$(document).on("keydown", function () {
+$(document).on("click", function () {
     if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
